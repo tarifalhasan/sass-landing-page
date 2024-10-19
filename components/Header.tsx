@@ -1,3 +1,43 @@
+import { NavigationMenus } from "./NavigationMenu";
+
+const components: { title: string; href: string; description: string }[] = [
+  {
+    title: "Alert Dialog",
+    href: "/docs/primitives/alert-dialog",
+    description:
+      "A modal dialog that interrupts the user with important content and expects a response.",
+  },
+  {
+    title: "Hover Card",
+    href: "/docs/primitives/hover-card",
+    description:
+      "For sighted users to preview content available behind a link.",
+  },
+  {
+    title: "Progress",
+    href: "/docs/primitives/progress",
+    description:
+      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
+  },
+  {
+    title: "Scroll-area",
+    href: "/docs/primitives/scroll-area",
+    description: "Visually or semantically separates content.",
+  },
+  {
+    title: "Tabs",
+    href: "/docs/primitives/tabs",
+    description:
+      "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
+  },
+  {
+    title: "Tooltip",
+    href: "/docs/primitives/tooltip",
+    description:
+      "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
+  },
+];
+
 const Header = () => {
   return (
     <div className="border-b hidden lg:block py-1 border-[#808080] ">
@@ -73,67 +113,10 @@ const Header = () => {
               />
             </svg>
           </div>
-          <ul className=" inline-flex items-center gap-5">
-            <li className="inline-flex items-center gap-1">
-              <span className="text-xs lg:text-base font-medium">
-                Why Forgewise
-              </span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M8.52905 10.5577L12.0001 14.0437L15.4711 10.5577"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </li>
-            <li className="inline-flex items-center gap-1">
-              <span className="text-xs lg:text-base font-medium">Features</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M8.52905 10.5577L12.0001 14.0437L15.4711 10.5577"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </li>
-            <li className="inline-flex items-center gap-1">
-              <span className="text-xs lg:text-base font-medium">Pricing</span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-              >
-                <path
-                  d="M8.52905 10.5577L12.0001 14.0437L15.4711 10.5577"
-                  stroke="white"
-                  strokeWidth="1.5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </li>
-          </ul>
+          <NavigationMenus />
         </div>
         <div className="inline-flex items-center gap-4">
-          <button className="py-2 px-[14px] rounded-[8px] inline-flex items-center justify-center border border-white">
+          <button className="py-2 px-[14px] rounded-[8px] inline-flex items-center justify-center border transition-all duration-300 hover:bg-[#8315DB] hover:border-[#8315DB] border-white">
             Get Demo
           </button>
           <button>

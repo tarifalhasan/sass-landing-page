@@ -1,6 +1,6 @@
 const Pricing = () => {
   return (
-    <div className="container  relative ">
+    <div className="container  z-30 relative ">
       <div className="flex pb-10 xl:pb-16 items-center justify-between gap-6 flex-wrap">
         <div className="space-y-10 lg:space-y-16">
           <h2 className="text-3xl max-w-[660px] font-bold font-kyiv -tracking-[0.96px] leading-[100%] lg:text-5xl">
@@ -27,7 +27,7 @@ const Pricing = () => {
         </div>
       </div>
       <div className="bg-[#131317] z-40 rounded-[32px]   grid grid-cols-12 relative  gap-y-14 px-6 xl:px-12 py-12">
-        <div className=" col-span-12 md:col-span-4 max-w-[232px] flex flex-col justify-between gap-5">
+        <div className="hover:bg-[#3E2454] transition-all duration-500 rounded-[12px] pt-[51px] pb-[35px] px-10 col-span-12 pricing_card  md:col-span-4  flex flex-col justify-between gap-5">
           <div className="flex flex-col gap-y-3">
             <h3 className="text-4xl font-bold font-kyiv">
               $15
@@ -48,7 +48,7 @@ const Pricing = () => {
             Choose plan
           </button>
         </div>
-        <div className=" col-span-12 md:col-span-4 max-w-[232px] flex flex-col justify-between gap-5">
+        <div className="hover:bg-[#3E2454] transition-all duration-500 col-span-12 rounded-[12px] px-10 pt-[51px] pb-[35px] pricing_card md:col-span-4  flex flex-col justify-between gap-5">
           <div className="flex flex-col gap-y-3">
             <h3 className="text-4xl font-bold font-kyiv">
               $100
@@ -65,18 +65,11 @@ const Pricing = () => {
               integrations and is best for scaling projects.
             </p>
           </div>
-          <button className="text-[0.94rem] hover:bg-purple-500 transition-colors duration-500 h-12 rounded-full bg-[#383838]">
+          <button className="text-[0.94rem]  hover:bg-purple-500 transition-colors duration-500 h-12 rounded-full bg-[#383838]">
             Choose plan
           </button>
         </div>
-
-        <div
-          style={{
-            boxShadow:
-              "0px 42px 34px 0px rgba(82, 67, 194, 0.30), 0px 4px 4px 0px rgba(0, 0, 0, 0.25)",
-          }}
-          className="px-10 lg:absolute lg:max-w-[350px] xl:max-w-[400px] lg:right-0 lg:-top-20  inline-flex     col-span-12 lg:col-span-4 w-auto rounded-[12px] pt-[51px] pb-[35px] bg-[#3E2454]  flex-col gap-y-5"
-        >
+        <div className="px-10  transition-all duration-500 hover:bg-[#3E2454] pricing_card inline-flex     col-span-12 lg:col-span-4 w-auto rounded-[12px] pt-[51px] pb-[35px]   flex-col gap-y-5">
           <div>
             <h3 className="text-4xl font-bold font-kyiv">
               $100
@@ -97,13 +90,13 @@ const Pricing = () => {
               performance and ROI.
             </p>
           </div>
-          <button className="text-[0.94rem]  transition-colors duration-500 h-12 rounded-full bg-[#BB6BD9]/50">
+          <button className="text-[0.94rem] hover:bg-purple-500 transition-colors duration-500 h-12 rounded-full bg-[#383838]">
             Choose plan
           </button>
         </div>
       </div>
       <svg
-        className=" absolute -top-[2%]"
+        className=" absolute -z-10 -top-[2%]"
         xmlns="http://www.w3.org/2000/svg"
         width={918}
         height={675}
