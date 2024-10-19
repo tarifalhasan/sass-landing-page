@@ -54,7 +54,7 @@ const components: { title: string; href: string; description: string }[] = [
 export function NavigationMenus() {
   return (
     <NavigationMenu>
-      <NavigationMenuList>
+      <NavigationMenuList className="flex flex-col lg:flex-row">
         <NavigationMenuItem>
           <NavigationMenuTrigger>Why Forgewise</NavigationMenuTrigger>
           <NavigationMenuContent>
